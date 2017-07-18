@@ -13,7 +13,8 @@ import { OrderService } from '../order/order.service';
 
 export class AddComponent implements OnInit {
     private orders: Order[];
-    private orderService: OrderService;
+
+    constructor(private orderService: OrderService) { }
 
     addProduct(name: string): void {
         name = name.trim();
