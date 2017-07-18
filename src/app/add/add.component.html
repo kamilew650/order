@@ -1,0 +1,12 @@
+<h1>Product:</h1>
+ <div>
+    <span>Product name: </span><input #product />
+    <button (click)="addProduct(product.value); product.value=''">Add</button>
+</div>
+<div>
+    <ul>
+    <li *ngFor="let order of orders">
+        <span >{{order.name}}</span>
+    </li>
+    </ul>
+</div>
